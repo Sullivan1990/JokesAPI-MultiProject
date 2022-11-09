@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JoeksAPI.Persistence\JokesAPI.Persistence.csproj" />
+    <ProjectReference Include="..\JokesAPI.Business\JokesAPI.Business.csproj" />
+    <ProjectReference Include="..\JokesAPI.Common\JokesAPI.Common.csproj" />
+    <ProjectReference Include="..\JokesAPI.Data\JokesAPI.Data.csproj" />
+  </ItemGroup>
+
+</Project>
