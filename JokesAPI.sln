@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI", "JokesAPI\JokesAPI.csproj", "{86117C8B-4B74-4064-8675-983459989F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokesAPI", "JokesAPI\JokesAPI.csproj", "{86117C8B-4B74-4064-8675-983459989F6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Persistence", "JoeksAPI.Persistence\JokesAPI.Persistence.csproj", "{323FE7CE-32FF-43D2-A45A-F419648E3BB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokesAPI.Persistence", "JoeksAPI.Persistence\JokesAPI.Persistence.csproj", "{323FE7CE-32FF-43D2-A45A-F419648E3BB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Data", "JokesAPI.Data\JokesAPI.Data.csproj", "{55878BB5-6D86-4BF5-9A2D-1F43FF5ED294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokesAPI.Data", "JokesAPI.Data\JokesAPI.Data.csproj", "{55878BB5-6D86-4BF5-9A2D-1F43FF5ED294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Business", "JokesAPI.Business\JokesAPI.Business.csproj", "{143BB91A-E6D3-4BA4-81EF-FEEFF3EBCCDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokesAPI.Business", "JokesAPI.Business\JokesAPI.Business.csproj", "{143BB91A-E6D3-4BA4-81EF-FEEFF3EBCCDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Common", "JokesAPI.Common\JokesAPI.Common.csproj", "{10D0853A-07A2-4762-8C1D-C1AE56967455}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokesAPI.Common", "JokesAPI.Common\JokesAPI.Common.csproj", "{10D0853A-07A2-4762-8C1D-C1AE56967455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Tests", "JokesAPI.Tests\JokesAPI.Tests.csproj", "{0BAE8903-E38D-4D9E-8F4E-143A7D7EEBD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{10D0853A-07A2-4762-8C1D-C1AE56967455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D0853A-07A2-4762-8C1D-C1AE56967455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D0853A-07A2-4762-8C1D-C1AE56967455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAE8903-E38D-4D9E-8F4E-143A7D7EEBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAE8903-E38D-4D9E-8F4E-143A7D7EEBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAE8903-E38D-4D9E-8F4E-143A7D7EEBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAE8903-E38D-4D9E-8F4E-143A7D7EEBD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
