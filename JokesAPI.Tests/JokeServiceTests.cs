@@ -47,6 +47,8 @@ namespace JokesAPI.Tests
             Assert.That(result.Result.Question == newJoke.Question &&
                 result.Result.Answer == newJoke.Answer);
             Assert.That(newJokeCount == initialJokeCount + 1);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -79,6 +81,8 @@ namespace JokesAPI.Tests
             Assert.IsNotNull(result);
             Assert.That(result.Succeeded == true);
             Assert.That(newJokeCount == initialJokeCount - 1);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -112,6 +116,8 @@ namespace JokesAPI.Tests
             Assert.That(result.Succeeded == false);
             Assert.That(newJokeCount == initialJokeCount);
             Assert.That(result.ErrorMessage.Length > 0);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -156,6 +162,8 @@ namespace JokesAPI.Tests
             Assert.That(result.Result.Answer == jokeUpdate.Answer);
             Assert.IsNotNull(result.Result.Modified);
             Assert.That(result.ErrorMessage.Length == 0);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -190,6 +198,8 @@ namespace JokesAPI.Tests
             // Assert
 
             Assert.IsTrue(result);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -224,6 +234,8 @@ namespace JokesAPI.Tests
             // Assert
 
             Assert.IsFalse(result);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -266,6 +278,8 @@ namespace JokesAPI.Tests
             // Assert
 
             Assert.That(result.JokeId == latestJokeId);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -310,6 +324,8 @@ namespace JokesAPI.Tests
             Assert.That(result.Result.Count == 2);
             Assert.That(result.Result[0].JokeId == 1000);
             Assert.That(result.Result[1].JokeId == 1001);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -353,6 +369,8 @@ namespace JokesAPI.Tests
 
             Assert.That(result.Result.Count == 1);
             Assert.That(result.Result[0].JokeId == 1000);
+            _context.Dispose();
+
         }
 
         [Test]
@@ -388,6 +406,8 @@ namespace JokesAPI.Tests
 
             Assert.That(result.Count() == 2);
             Assert.That(_context.Jokes.Count() == result.Count());
+
+            _context.Dispose();
         }
 
         [Test]
@@ -424,6 +444,8 @@ namespace JokesAPI.Tests
 
             Assert.NotNull(result);
             Assert.That(result.Question.Equals(expectedJokeQuestion));
+            _context.Dispose();
+
         }
     }
 }
