@@ -10,7 +10,7 @@ namespace JokesAPI.Tests
         [SetUp]
         public void Setup()
         {
-            _options = new DbContextOptionsBuilder().UseInMemoryDatabase(databaseName: "JokeTestChange1").Options;
+            _options = new DbContextOptionsBuilder().UseInMemoryDatabase(databaseName: "AnotherChange").Options;
         }
 
         [Test]
