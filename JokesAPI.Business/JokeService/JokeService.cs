@@ -128,6 +128,7 @@ namespace JokesAPI.Business.JokeService
         {
             try
             {
+                joke.Modified = DateTime.Now;
                 _context.Jokes.Update(joke);
                 _context.SaveChanges();
                 return new OperationResult<Joke>

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JoeksAPI.Persistence\JokesAPI.Persistence.csproj" />
+    <ProjectReference Include="..\JokesAPI.Common\JokesAPI.Common.csproj" />
   </ItemGroup>
 
 </Project>
