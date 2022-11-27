@@ -5,6 +5,7 @@ using JokesAPI.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace JokesAPI.Business.JokeService
 {
@@ -90,6 +91,16 @@ namespace JokesAPI.Business.JokeService
         public Joke GetJokeById(int jokeId)
         {
             return _context.Jokes.Find(jokeId);
+        }
+
+        public Joke FindPredicate(Expression<Func<Joke, bool>> predicate)
+        {
+            return _context.Jokes.Where(predicate).FirstOrDefault();
+        }
+
+        public List<Joke> FindAllPredicate(Expression<Func<Joke, bool>> predicate)
+        {
+            return _context.Jokes.Where(predicate).ToList();
         }
 
         public OperationResult<List<Joke>> GetJokesBySearch(string search)
