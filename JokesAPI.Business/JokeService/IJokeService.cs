@@ -4,6 +4,7 @@ using JokesAPI.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,10 @@ namespace JokesAPI.Business.JokeService
         public OperationResult<Joke> CreateJoke(JokeCreateDTO joke);
         public OperationResult<Joke> UpdateJoke(Joke joke);
         public OperationResult<Joke> DeleteJoke(int jokeId);
+        public Joke FindPredicate(Expression<Func<Joke, bool>> predicate);
+        public List<Joke> FindAllPredicate(Expression<Func<Joke, bool>> predicate);
+
+
 
 
     }
